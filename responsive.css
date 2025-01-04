@@ -1,0 +1,140 @@
+@media (min-width: 1440px) {
+  #main {
+    max-width: 1440px;
+    margin: auto;
+    border: 1px solid rgba(0, 0, 0, 0.309);
+    background-color: white;
+  }
+}
+@media (max-width: 400px) {
+  #main {
+    overflow: hidden !important;
+    width: 400px;
+    /* border: 1px solid red; */
+  }
+  nav {
+    margin: 0 20px;
+    padding: 0;
+    width: 100%;
+  }
+  .hamburger {
+    display: block;
+  }
+  .crossIcon {
+    display: block;
+  }
+  nav .buttons {
+    display: none;
+  }
+  .hero-section {
+    width: 100%;
+    height: 347px;
+    /* border: 3px solid red; */
+  }
+  .hero-section h1 {
+    text-align: center;
+
+    /* Heading/H2/Semibold/Mobile */
+    font-family: "Cabinet Grotesk";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 125% */
+    letter-spacing: -0.64px;
+    width: 348px;
+  }
+  .search-bar {
+    width: 343px;
+    height: 52px;
+  }
+  .breadcrumb {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .categories {
+    margin: 20px 0 10px 21px;
+    overflow-x: auto;
+  }
+  .categories::-webkit-scrollbar {
+    display: none;
+  }
+  .categories {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  .blogsContainer {
+    flex-direction: column;
+    margin: 0 0px;
+    /* padding: 0 20px; */
+    row-gap: 40px;
+  }
+  .blogsContainer .blog {
+    width: 353px;
+    height: 333px;
+    flex-shrink: 0;
+  }
+  .blog .imgContainer {
+    /* width: 364.06px; */
+    height: 226.162px;
+    flex-shrink: 0;
+  }
+  .blog .titleSection {
+    display: flex;
+    width: 353px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .blog .titleSection p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 155.556% */
+  }
+  .blog .featured {
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+  }
+  .pagination {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  .pagination .previousArrow,
+  .previousArrowText {
+    display: none;
+  }
+  .pagination p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+  }
+  .maxScreenFooter {
+    display: none;
+  }
+  .minScreenFooter {
+    display: flex;
+  }
+  .cta {
+    display: block;
+  }
+  /* menu design  */
+  .menu {
+    flex-direction: column;
+    position: absolute;
+    right: -140px;
+    top: 60px;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgba(5, 31, 5, 0.801);
+
+    align-items: flex-start;
+    transition: 0.3s ease-in-out;
+  }
+  .menu a {
+    color: white;
+    font-size: 20px;
+  }
+}

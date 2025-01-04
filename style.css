@@ -1,0 +1,598 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Satoshi", sans-serif;
+}
+/* nav bar  */
+nav {
+  display: flex;
+  width: 1440px;
+  height: 82px;
+  padding: 20px 112px;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-shrink: 0; */
+  position: relative;
+}
+.hamburger {
+  position: absolute;
+  right: 40px;
+  /* z-index: 100; */
+  display: none;
+}
+/* .crossIcon {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  z-index: 100;
+  display: none;
+  height: 20px;
+} */
+.crossIcon:hover{
+  cursor: pointer;
+}
+
+.logo {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8.151px;
+}
+
+nav ul {
+  display: inline-flex;
+  align-items: center;
+  gap: 41px;
+  margin-left: 150px;
+}
+nav ul li {
+  list-style-type: none;
+}
+nav ul li a {
+  color: #363636;
+  font-family: "Satoshi Variable";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.32px;
+  text-decoration: none;
+}
+nav .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .buttons .languageBtn {
+  display: flex;
+  padding: 10px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+nav .buttons .languageBtn p {
+  color: #0a4020;
+  font-family: "Satoshi Variable";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.24px;
+}
+nav .buttons .loginBtn {
+  display: flex;
+  padding: 9px 18px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+nav .buttons .loginBtn P {
+  color: #0a4020;
+  font-family: "Satoshi Variable";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+nav .buttons .getStartedBtn {
+  display: flex;
+  padding: 10px 28px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 6px;
+  background: #0a4020;
+  color: white;
+}
+
+/* hero section  */
+
+/* body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #fff;
+} */
+
+.hero-section {
+  background: url("./Assets/MaskGradient.png");
+  width: 1440px;
+  height: 412px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.hero-section .content {
+  text-align: center;
+}
+.hero-section h1 {
+  width: 1026px;
+  font-family: "Crimson Text", serif;
+  /* font-family: "Cabinet Grotesk Variable"; */
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -1.04px;
+}
+
+.breadcrumb {
+  font-feature-settings: "ss02" on, "ss03" on;
+  margin-bottom: 28px;
+
+  /* Paragraph/Medium/Regular */
+  font-family: "Satoshi Variable";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.search-bar {
+  margin-top: 48px;
+  display: flex;
+  width: 629px;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 5px solid rgba(255, 255, 255, 0.2);
+  background: var(--Base-White, #fff);
+  transition: all 0.3s;
+}
+.search-bar:hover {
+  cursor: pointer;
+}
+.search-bar input {
+  color: var(--Gray-500, #64748b);
+  font-feature-settings: "ss02" on, "ss03" on;
+
+  /* Paragraph/Large/Medium */
+  font-family: "Satoshi Variable";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 155.556% */
+  /* width: 100%; */
+  outline: none;
+  border: none;
+  border-radius: 12px;
+}
+.search-bar input:hover {
+  cursor: pointer;
+}
+.hero-section .gettingHelp {
+  /* position: absolute;
+  bottom: 0; */
+  /* opacity: 0; */
+  display: none;
+}
+.hero-section .gettingHelp input {
+  color: black;
+}
+
+/* categories  */
+.categories {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-shrink: 0;
+  /* padding: 534px 112px; */
+  /* border: 1px solid red; */
+  margin: 60px 112px;
+}
+.categories .cList {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.categories .cList a {
+  text-decoration: none;
+  color: var(--Neutral-Rich-Black-850, #363636);
+  font-feature-settings: "ss02" on, "ss03" on;
+
+  /* Paragraph/Small/Medium */
+  font-family: "Satoshi Variable";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+
+  display: flex;
+  padding: 8px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 60px;
+  background: #f2f7f4;
+  backdrop-filter: blur(10px);
+  flex-shrink: 0;
+}
+
+/* blogs */
+.blogsContainer {
+  display: flex;
+  align-items: center;
+  column-gap: 32px;
+  row-gap: 64px;
+  /* align-self: stretch; */
+  margin: 60px 112px;
+  flex-wrap: wrap;
+  /* height: 200vh; */
+}
+.blogsContainer .blog {
+  max-width: 383px;
+  max-height: 359px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* overflow: hidden; */
+}
+.blog .imgContainer {
+  overflow: hidden;
+  /* border: 1px solid red; */
+  overflow: hidden;
+  background-size: cover;
+  border-radius: 16px;
+  /* width: 396.031px; */
+  width: 100%;
+  height: 244px;
+  position: relative;
+}
+.blog .imgContainer p {
+  color: var(--Neutral-Rich-Black-800, #5e5e5e);
+  background-color: red;
+  font-feature-settings: "ss02" on, "ss03" on;
+  font-family: "Satoshi Variable";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px; /* 116.667% */
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  border-radius: 18.333px;
+  background: #fff;
+  padding: 4px 8px;
+}
+.blog img {
+  /* width: 396.031px; */
+  /* height: 100%; */
+  border-radius: 16px;
+  flex-shrink: 0;
+  background-position: center;
+  object-fit: cover;
+}
+.blog .titleSection {
+  display: flex;
+  width: 381.683px;
+  justify-content: space-between;
+  align-items: center;
+}
+.blog .titleSection .arrow {
+  padding: 10px;
+  width: 36.666px;
+  height: 36.212px;
+  background-color: #cfff45;
+  border-radius: 50%;
+}
+.blog .titleSection p {
+  color: var(--Neutral-Rich-Black-850, #363636);
+  font-feature-settings: "ss02" on, "ss03" on;
+
+  /* Heading/H6/Medium/Desktop */
+  font-family: "Satoshi Variable";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 140% */
+  letter-spacing: -0.4px;
+}
+.blog .featured {
+  color: var(--Neutral-Rich-Black-700, #7e7e7e);
+  font-feature-settings: "ss02" on, "ss03" on;
+
+  /* Label/Medium/Regular */
+  font-family: "Satoshi Variable";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 114.286% */
+}
+
+/* Paginatiion  */
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  justify-content: center;
+}
+.pagination .arrow {
+  width: 26.476px;
+  height: 10.621px;
+}
+.pagination p {
+  color: var(--Primary-700, #0a421a);
+  font-family: Satoshi;
+  font-size: 17.4px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.pagination .pageNumbers {
+  display: flex;
+  gap: 19px;
+  flex-direction: row;
+}
+.pagination .pageNumbers a {
+  color: var(--Primary-900, #041b0b);
+  font-feature-settings: "ss02" on, "ss03" on;
+
+  /* Paragraph/Medium/Regular */
+  font-family: "Satoshi Variable";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  text-decoration: none;
+}
+.pagination .pageNumbers .selectedPage {
+  color: #fff;
+  font-feature-settings: "ss02" on, "ss03" on;
+  background-color: rgba(10, 66, 26, 1);
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Paragraph/Medium/Regular */
+  font-family: "Satoshi Variable";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+/* xuteko code  */
+.contentContainer {
+  /* height: 200vh; */
+}
+
+/* .maxScreenFooter  */
+.maxScreenFooter {
+  display: flex;
+  padding: 64px 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 64px;
+  align-self: stretch;
+  margin: 0 112px;
+}
+.maxScreenFooter .copyrightSection {
+  display: flex;
+  padding-top: 24px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+.copyrightSection p {
+  color: var(--Neutral-500, #6b7280);
+
+  /* Paragraph/Small/Regular */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
+.maxScreenFooter .contentBox {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+}
+.maxScreenFooter .contentBox div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+  width: 500px;
+}
+.maxScreenFooter .contentBox div a {
+  text-decoration: none;
+  color: var(--Neutral-500, #6b7280);
+
+  /* Paragraph/Small/Medium */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+}
+.maxScreenFooter .contentBox div p {
+  color: var(--Neutral-900, #111827);
+
+  /* Paragraph/Small/Medium */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+}
+
+/* footer -> min SCreen  */
+
+.minScreenFooter {
+  display: none;
+  padding: 48px 23px 56px 40px;
+  flex-direction: column;
+  background-color: rgba(4, 27, 11, 1);
+  margin: 40px 20px;
+  border-radius: 12px;
+}
+.minScreenFooter .title {
+  margin-bottom: 40px;
+}
+.minScreenFooter .title .address {
+  color: var(--Secondary-Grey-03, #b8b8b8);
+  font-feature-settings: "ss02" on, "ss03" on;
+
+  /* Paragraph/Large/Regular */
+  font-family: "Satoshi Variable";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 155.556% */
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.minScreenFooter .linksContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+.minScreenFooter .linksContainer .title {
+  color: var(--Secondary-02-White, #fff);
+  font-family: Satoshi;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 36px */
+  margin-bottom: 4px;
+}
+.minScreenFooter .linksContainer a {
+  color: var(--Secondary-Grey-03, #b8b8b8);
+
+  /* Regular/Reg - 18 - 120% */
+  font-family: Satoshi;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 21.6px */
+  text-decoration: none;
+}
+.minScreenFooter .copyright {
+  color: var(--Secondary-02-White, #fff);
+  font-feature-settings: "ss02" on, "ss03" on;
+
+  /* Label/Small/Regular */
+  font-family: "Satoshi Variable";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px; /* 116.667% */
+  margin-top: 32px;
+}
+
+/* cta  */
+.cta {
+  padding: 94px 23px 75px 20px;
+  background-color: rgba(248, 253, 234, 1);
+  position: relative;
+  display: none;
+}
+.cta .content {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+.cta .content .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  align-self: stretch;
+  text-align: center;
+}
+.cta .content .title h2 {
+  color: var(--Brand-Color-1-600, #0d2e1b);
+  text-align: center;
+  font-feature-settings: "salt" on, "ss01" on;
+
+  /* Heading/H2/Semibold/Mobile */
+  font-family: "Cabinet Grotesk";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 125% */
+  letter-spacing: -0.64px;
+}
+.cta .content .title p {
+  color: var(--Neutral-500, #6b7280);
+  text-align: center;
+  font-feature-settings: "ss02" on, "ss03" on;
+
+  /* Paragraph/Medium/Regular */
+  font-family: "Satoshi Variable";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+.cta .content button {
+  display: flex;
+  padding: 14px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  border: 1px solid var(--primary-500-main, #18a23f);
+  background: var(--primary-500-main, #18a23f);
+
+  /* Drop shadow/Small */
+  box-shadow: 0px 2px 6px 0px rgba(16, 24, 40, 0.06);
+  color: var(--Generic-White, #fff);
+  text-align: center;
+  font-feature-settings: "ss02" on, "ss03" on;
+
+  /* Label/Large/Medium */
+  font-family: "Satoshi Variable";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 112.5% */
+}
+.cta .calender {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.cta .book {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
