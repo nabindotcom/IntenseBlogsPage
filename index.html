@@ -4,7 +4,9 @@
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
+      <title>Blog Page</title>
+      <link rel="icon" href="./Assets/nav/logo.png">
+
       <link rel="stylesheet" href="style.css">
       <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
       <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,11 +14,15 @@
       <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap"
             rel="stylesheet">
       <link rel="stylesheet" href="./responsive.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap"
+            rel="stylesheet">
 </head>
 
 <body>
       <div id="main">
-            <nav>
+            <header>
                   <div class="logo">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" viewBox="0 0 20 24" fill="none">
                               <path d="M6.94379 11.0309H1.32943C0.636398 11.0309 0.074585 11.5927 0.074585 12.2857V22.7447C0.074585 23.4378 0.636398 23.9996 1.32943 23.9996H6.94379C7.63682 23.9996 8.19863 23.4378 8.19863 22.7447V12.2857C8.19863 11.5927 7.63682 11.0309 6.94379 11.0309Z"
@@ -40,12 +46,60 @@
                               <path d="M0.381348 15.472V0.245239H4.60134V15.472H0.381348Z" fill="#0A4020" />
                         </svg>
                   </div>
-                  <ul class="menu">
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Solution</a></li>
-                        <li><a href="#">Download</a></li>
-                        <li><a href="#">Support</a></li>
-                  </ul>
+                  <nav>
+                        <ul class="menu">
+                              <li><a href="#">Features</a></li>
+                              <li><a href="#">Solution</a></li>
+                              <li><a href="#">Download</a></li>
+                              <li><a href="#">Support</a></li>
+                        </ul>
+
+                        <div class="buttons">
+                              <div class="languageBtn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18"
+                                          fill="none">
+                                          <g clip-path="url(#clip0_342_646)">
+                                                <path d="M6.55042 5.41125L7.15792 7.03125H5.94291L6.55042 5.41125ZM8.22385 6.71063C8.92417 5.79094 9.93104 5.12437 11.177 4.77844C10.4429 3.18094 8.80885 2.25 6.55042 2.25C3.42573 2.25 1.48792 4.0275 1.48792 6.89062C1.48792 8.35031 1.99417 9.52594 2.9026 10.3275L1.48792 11.7422L1.90979 12.375C3.05167 12.375 4.10354 11.9925 4.9501 11.3541C5.43948 11.4694 5.97385 11.5312 6.55042 11.5312C6.78104 11.5312 7.00323 11.5172 7.2226 11.5003C7.15229 11.1094 7.11292 10.6987 7.11292 10.2656C7.11292 9.49781 7.23385 8.79469 7.45604 8.15625H5.52104L5.20604 9H4.01917L5.70667 4.5H7.39417L8.22385 6.71063ZM13.3004 10.4963C13.5789 10.2431 13.8179 9.93656 13.9754 9.5625H12.6282C12.7857 9.93656 13.0248 10.2431 13.3032 10.4963H13.3004ZM16.9482 13.7025L18.3629 15.1172L17.941 15.75C16.7992 15.75 15.7473 15.3675 14.9007 14.7291C14.4114 14.8444 13.877 14.9062 13.3004 14.9062C10.1757 14.9062 8.23792 13.1287 8.23792 10.2656C8.23792 7.4025 10.1757 5.625 13.3004 5.625C16.4251 5.625 18.3629 7.4025 18.3629 10.2656C18.3629 11.7253 17.8567 12.9009 16.9482 13.7025ZM15.8317 8.4375H13.8629V7.59375H12.7379V8.4375H10.7692V9.5625H11.4695C11.6326 10.1166 11.942 10.6481 12.3751 11.115C11.5989 11.4975 10.862 11.6044 10.862 11.6044L11.2557 12.6591C12.0376 12.5184 12.721 12.2428 13.2976 11.8772C13.8742 12.2428 14.5604 12.5212 15.3395 12.6591L15.7332 11.6044C15.7332 11.6044 14.9964 11.4975 14.2201 11.115C14.656 10.6481 14.9626 10.1166 15.1257 9.5625H15.826V8.4375H15.8317Z"
+                                                      fill="#0A4020" />
+                                          </g>
+                                          <defs>
+                                                <clipPath id="clip0_342_646">
+                                                      <rect width="18" height="18" fill="white"
+                                                            transform="translate(0.925415)" />
+                                                </clipPath>
+                                          </defs>
+                                    </svg>
+                                    <p>English</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                          fill="none">
+                                          <path d="M12.1754 6.5L8.42541 10.25L4.67542 6.5" stroke="#0A421A"
+                                                stroke-width="1.125" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <ul class="dropdown">
+                                          <li> <a href="#">Nepali</a></li>
+                                          <li><a href="#">English</a></li>
+                                    </ul>
+                              </div>
+                              <div class="loginBtn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"
+                                          fill="none">
+                                          <g clip-path="url(#clip0_342_652)">
+                                                <path d="M10.9254 6.66663L14.2587 9.99996M14.2587 9.99996L10.9254 13.3333M14.2587 9.99996H3.42542M3.70693 5.83329C5.14781 3.34245 7.84091 1.66663 10.9254 1.66663C15.5278 1.66663 19.2587 5.39759 19.2587 9.99996C19.2587 14.6023 15.5278 18.3333 10.9254 18.3333C7.84091 18.3333 5.14781 16.6575 3.70693 14.1666"
+                                                      stroke="#0A4020" stroke-width="2" stroke-linecap="round"
+                                                      stroke-linejoin="round" />
+                                          </g>
+                                          <defs>
+                                                <clipPath id="clip0_342_652">
+                                                      <rect width="20" height="20" fill="white"
+                                                            transform="translate(0.925415)" />
+                                                </clipPath>
+                                          </defs>
+                                    </svg>
+                                    <p>Login</p>
+                              </div>
+                              <button class="getStartedBtn">Get Started</button>
+                        </div>
+                  </nav>
                   <div class="hamburger" id="hamburger">
                         <svg xmlns="http://www.w3.org/2000/svg" width="31" height="32" viewBox="0 0 31 32" fill="none">
                               <path d="M27.125 16H11.625M27.125 8.25H3.875M27.125 23.75H3.875" stroke="#0A4020"
@@ -53,49 +107,7 @@
                         </svg>
                   </div>
 
-
-                  <div class="buttons">
-                        <div class="languageBtn">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18"
-                                    fill="none">
-                                    <g clip-path="url(#clip0_342_646)">
-                                          <path d="M6.55042 5.41125L7.15792 7.03125H5.94291L6.55042 5.41125ZM8.22385 6.71063C8.92417 5.79094 9.93104 5.12437 11.177 4.77844C10.4429 3.18094 8.80885 2.25 6.55042 2.25C3.42573 2.25 1.48792 4.0275 1.48792 6.89062C1.48792 8.35031 1.99417 9.52594 2.9026 10.3275L1.48792 11.7422L1.90979 12.375C3.05167 12.375 4.10354 11.9925 4.9501 11.3541C5.43948 11.4694 5.97385 11.5312 6.55042 11.5312C6.78104 11.5312 7.00323 11.5172 7.2226 11.5003C7.15229 11.1094 7.11292 10.6987 7.11292 10.2656C7.11292 9.49781 7.23385 8.79469 7.45604 8.15625H5.52104L5.20604 9H4.01917L5.70667 4.5H7.39417L8.22385 6.71063ZM13.3004 10.4963C13.5789 10.2431 13.8179 9.93656 13.9754 9.5625H12.6282C12.7857 9.93656 13.0248 10.2431 13.3032 10.4963H13.3004ZM16.9482 13.7025L18.3629 15.1172L17.941 15.75C16.7992 15.75 15.7473 15.3675 14.9007 14.7291C14.4114 14.8444 13.877 14.9062 13.3004 14.9062C10.1757 14.9062 8.23792 13.1287 8.23792 10.2656C8.23792 7.4025 10.1757 5.625 13.3004 5.625C16.4251 5.625 18.3629 7.4025 18.3629 10.2656C18.3629 11.7253 17.8567 12.9009 16.9482 13.7025ZM15.8317 8.4375H13.8629V7.59375H12.7379V8.4375H10.7692V9.5625H11.4695C11.6326 10.1166 11.942 10.6481 12.3751 11.115C11.5989 11.4975 10.862 11.6044 10.862 11.6044L11.2557 12.6591C12.0376 12.5184 12.721 12.2428 13.2976 11.8772C13.8742 12.2428 14.5604 12.5212 15.3395 12.6591L15.7332 11.6044C15.7332 11.6044 14.9964 11.4975 14.2201 11.115C14.656 10.6481 14.9626 10.1166 15.1257 9.5625H15.826V8.4375H15.8317Z"
-                                                fill="#0A4020" />
-                                    </g>
-                                    <defs>
-                                          <clipPath id="clip0_342_646">
-                                                <rect width="18" height="18" fill="white"
-                                                      transform="translate(0.925415)" />
-                                          </clipPath>
-                                    </defs>
-                              </svg>
-                              <p>English</p>
-                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
-                                    fill="none">
-                                    <path d="M12.1754 6.5L8.42541 10.25L4.67542 6.5" stroke="#0A421A"
-                                          stroke-width="1.125" stroke-linecap="round" stroke-linejoin="round" />
-                              </svg>
-                        </div>
-                        <div class="loginBtn">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"
-                                    fill="none">
-                                    <g clip-path="url(#clip0_342_652)">
-                                          <path d="M10.9254 6.66663L14.2587 9.99996M14.2587 9.99996L10.9254 13.3333M14.2587 9.99996H3.42542M3.70693 5.83329C5.14781 3.34245 7.84091 1.66663 10.9254 1.66663C15.5278 1.66663 19.2587 5.39759 19.2587 9.99996C19.2587 14.6023 15.5278 18.3333 10.9254 18.3333C7.84091 18.3333 5.14781 16.6575 3.70693 14.1666"
-                                                stroke="#0A4020" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                    </g>
-                                    <defs>
-                                          <clipPath id="clip0_342_652">
-                                                <rect width="20" height="20" fill="white"
-                                                      transform="translate(0.925415)" />
-                                          </clipPath>
-                                    </defs>
-                              </svg>
-                              <p>Login</p>
-                        </div>
-                        <button class="getStartedBtn">Get Started</button>
-                  </div>
-            </nav>
+            </header>
 
             <section class="hero-section">
                   <div class="content">
@@ -222,6 +234,15 @@
                               <a href="#">Contact</a>
                               <a href="#">Press</a>
                               <a href="#">Status</a>
+                        </div>
+
+                        <div class="industry-solutions">
+                              <p>Industry Solutions</p>
+                              <a href="#">Apparel & Fashion</a>
+                              <a href="#">Health & Beauty</a>
+                              <a href="#">Food & Beverage</a>
+                              <a href="#">Manufacturing</a>
+                              <a href="#">Automotive</a>
                         </div>
 
                         <div class="legal">
